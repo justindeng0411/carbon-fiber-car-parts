@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Fiber Performance</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Carbon Fiber Performance</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Carbon Fiber Performance</h2>
+        <p>We provide high-quality carbon fiber parts for the most popular performance cars.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="car" data-name="A90 Supra Hood" data-price="799">
+                <h3>A90 Supra</h3>
+                <p>Carbon Fiber Hood - $799</p>
+                <button onclick="addToCart('A90 Supra Hood', 799)">Add to Cart</button>
+            </div>
+            <div class="car" data-name="G80 M3 Splitter" data-price="499">
+                <h3>G80 M3 / G82 M4</h3>
+                <p>Front Splitter - $499</p>
+                <button onclick="addToCart('G80 M3 Splitter', 499)">Add to Cart</button>
+            </div>
+            <div class="car" data-name="C8 Corvette Wing" data-price="899">
+                <h3>Corvette C7 / C8</h3>
+                <p>High Wing - $899</p>
+                <button onclick="addToCart('C8 Corvette Wing', 899)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: sales@carbonfiberperformance.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Carbon Fiber Performance. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
